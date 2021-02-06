@@ -1,14 +1,14 @@
 import { CardDeck } from 'react-bootstrap';
 import InfoCard from '../../Components/InfoCard';
 
-const CardGrid = ({ astronauts }) => {
+const CardGrid = ({ data }) => {
 
   return (
     <div className="container">
       <div className="row justify-content-md-center">
           {
-            astronauts.map((astronaut) => {
-              return (<InfoCard className="col-md-auto" key={astronaut.id} astronaut={astronaut} />)
+            data.map((item) => {
+              return (<InfoCard className="col-md-auto" key={item.id} astronaut={item} />)
             })
           }
       </div>

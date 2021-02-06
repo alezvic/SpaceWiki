@@ -1,25 +1,20 @@
-const Navbar = () => {
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+
+const NavigationBar = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">SpaceWiki</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Astronauts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Agencies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Missions</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand href="#home">SpaceWiki</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="#features">Astronauts</Nav.Link>
+          <Nav.Link href="#pricing">Agencies</Nav.Link>
+          <Nav.Link href="#pricing">Launches</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   )
 }
 
-export default Navbar;
+export default NavigationBar;
