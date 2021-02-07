@@ -19,3 +19,7 @@ function App() {
 }
 
 export default App;
+
+// TODO next add router
+// TODO custom hook and fetch to get real data
+// TODO add favorites (state and actions)

@@ -18,3 +18,5 @@ const NavigationBar = () => {
 }
 
 export default NavigationBar;
+
+// TODO add links functionality

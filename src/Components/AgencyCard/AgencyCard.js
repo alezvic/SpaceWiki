@@ -37,4 +37,6 @@ const AgencyCard = ({ agency }) => {
   )
 }
 
+// TODO search a suitable placeholder for images
+
 export default AgencyCard;
